@@ -1,0 +1,135 @@
+<html lang="en">
+<head>
+  <title>Suit</title>
+
+  <style>
+    .but {
+      background-color: black;
+      color: white;
+      width: 50px;
+      height: 50px;
+      border-radius: 30px;
+      margin-right: 5px;
+      margin-left: 5px;
+      font-size: 20;
+    }
+  </style>
+</head>
+<body style="font-family: calibri; background-color: rgb(255, 218, 170);">
+<div style="display: flex; justify-content: center; align-items: center; text-align: center; background-color: beige; height: 100%;">
+
+  <div>
+
+  <h1 style="margin-bottom: 50px;">Game Suit</h1>
+  <p>
+    Pilih 
+  </p>
+
+  <button class="but" onclick="
+  const angkaRandom = Math.random();
+
+  let komputer = '';
+
+  if (angkaRandom >= 0 && angkaRandom < 1/3) {
+    komputer = 'Batu';
+  }
+  else if (angkaRandom >= 1/3 && angkaRandom < 2/3) {
+    komputer = 'Gunting';
+  }
+  else if (angkaRandom >= 2/3 && angkaRandom < 1) {
+    komputer = 'Kertas';
+  }
+
+  console.log(komputer);
+
+  let hasil = '';
+
+  if (komputer === 'Batu') {
+    hasil = 'dan Bot Seri 😊';
+  }
+  else if (komputer === 'Gunting') {
+    hasil = 'Menang 😆';
+  }
+  else if (komputer === 'Kertas') {
+    hasil = 'Kalah 😫';
+  }
+
+  alert(`User memilih Batu. Bot memilih ${komputer}. User ${hasil}`)
+
+  ">
+    👊
+  </button>
+
+  <button class="but" onclick="
+  const angkaRandom1 = Math.random();
+
+  let komputer1 = '';
+
+  if (angkaRandom1 >= 0 && angkaRandom1 < 1/3) {
+    komputer1 = 'Batu';
+  }
+  else if (angkaRandom1 >= 1/3 && angkaRandom1 < 2/3) {
+    komputer1 = 'Gunting';
+  }
+  else if (angkaRandom1 >= 2/3 && angkaRandom1 < 1) {
+    komputer1 = 'Kertas';
+  }
+
+  console.log(komputer1);
+  
+  let hasil1 = '';
+
+  if (komputer1 === 'Batu') {
+    hasil1 = 'Kalah 😫';
+  }
+  else if (komputer1 === 'Gunting') {
+    hasil1 = 'dan Bot Seri 😊';
+  }
+  else if (komputer1 === 'Kertas') {
+    hasil1 = 'Menang 😆';
+  }
+
+  alert(`User memilih Gunting. Bot memilih ${komputer1}. User ${hasil1}`)
+  ">
+    ✌
+  </button>
+  
+  <button class="but" onclick="
+  const angkaRandom2 = Math.random();
+  
+  let komputer2 = '';
+
+  if (angkaRandom2 >= 0 && angkaRandom2 < 1/3) {
+    komputer2 = 'Batu';
+  }
+  else if (angkaRandom2 >= 1/3 && angkaRandom2 < 2/3) {
+    komputer2 = 'Gunting';
+  }
+  else if (angkaRandom2 >= 2/3 && angkaRandom2 < 1) {
+    komputer2 = 'Kertas';
+  }
+
+  console.log(komputer2);
+
+  let hasil2 = '';
+
+  if (komputer2 === 'Batu') {
+    hasil2 = 'Menang 😆';
+  }
+  else if (komputer2 === 'Gunting') {
+    hasil2 = 'Kalah 😫';
+  }
+  else if (komputer2 === 'Kertas') {
+    hasil2 = 'dan Bot Seri 😊';
+  }
+  
+  alert(`User memilih Kertas. Bot memilih ${komputer2}. User ${hasil2}`)
+  ">
+    🖐
+  </button>
+  </div>
+</div>
+
+  
+</body>
+</html>
